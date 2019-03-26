@@ -1,0 +1,16 @@
+/home/user/code/c/basic_window/build/CMakeFiles/install/strip.dir
+/home/user/code/c/basic_window/build/CMakeFiles/install/local.dir
+/home/user/code/c/basic_window/build/CMakeFiles/basic_window.dir
+/home/user/code/c/basic_window/build/CMakeFiles/edit_cache.dir
+/home/user/code/c/basic_window/build/CMakeFiles/rebuild_cache.dir
+/home/user/code/c/basic_window/build/CMakeFiles/install.dir
+/home/user/code/c/basic_window/build/CMakeFiles/list_install_components.dir
+/home/user/code/c/basic_window/build/libs/SDL2/CMakeFiles/install/strip.dir
+/home/user/code/c/basic_window/build/libs/SDL2/CMakeFiles/install/local.dir
+/home/user/code/c/basic_window/build/libs/SDL2/CMakeFiles/install.dir
+/home/user/code/c/basic_window/build/libs/SDL2/CMakeFiles/list_install_components.dir
+/home/user/code/c/basic_window/build/libs/SDL2/CMakeFiles/rebuild_cache.dir
+/home/user/code/c/basic_window/build/libs/SDL2/CMakeFiles/SDL2main.dir
+/home/user/code/c/basic_window/build/libs/SDL2/CMakeFiles/SDL2-static.dir
+/home/user/code/c/basic_window/build/libs/SDL2/CMakeFiles/uninstall.dir
+/home/user/code/c/basic_window/build/libs/SDL2/CMakeFiles/edit_cache.dir

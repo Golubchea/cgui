@@ -1,0 +1,679 @@
+Performing C SOURCE FILE Test HAVE_GCC_PREFERRED_STACK_BOUNDARY failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_80170/fast"
+/usr/bin/make -f CMakeFiles/cmTC_80170.dir/build.make CMakeFiles/cmTC_80170.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_80170.dir/src.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DHAVE_GCC_PREFERRED_STACK_BOUNDARY -mpreferred-stack-boundary=2   -o CMakeFiles/cmTC_80170.dir/src.c.o   -c /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/src.c
+/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/src.c:1:0: error: -mpreferred-stack-boundary=2 is not between 4 and 12
+ int x = 0; int main(int argc, char **argv) {}
+ ^
+CMakeFiles/cmTC_80170.dir/build.make:65: ошибка выполнения рецепта для цели «CMakeFiles/cmTC_80170.dir/src.c.o»
+make[1]: *** [CMakeFiles/cmTC_80170.dir/src.c.o] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_80170/fast»
+make: *** [cmTC_80170/fast] Ошибка 2
+
+Source file was:
+int x = 0; int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b997a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b997a.dir/build.make CMakeFiles/cmTC_b997a.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_b997a.dir/src.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DHAVE_ALTIVEC_H_HDR -maltivec   -o CMakeFiles/cmTC_b997a.dir/src.c.o   -c /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/src.c
+gcc: error: unrecognized command line option ‘-maltivec’
+CMakeFiles/cmTC_b997a.dir/build.make:65: ошибка выполнения рецепта для цели «CMakeFiles/cmTC_b997a.dir/src.c.o»
+make[1]: *** [CMakeFiles/cmTC_b997a.dir/src.c.o] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_b997a/fast»
+make: *** [cmTC_b997a/fast] Ошибка 2
+
+Source file was:
+
+          #include <altivec.h>
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_ALTIVEC failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_356ec/fast"
+/usr/bin/make -f CMakeFiles/cmTC_356ec.dir/build.make CMakeFiles/cmTC_356ec.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_356ec.dir/src.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DHAVE_ALTIVEC -maltivec   -o CMakeFiles/cmTC_356ec.dir/src.c.o   -c /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/src.c
+gcc: error: unrecognized command line option ‘-maltivec’
+CMakeFiles/cmTC_356ec.dir/build.make:65: ошибка выполнения рецепта для цели «CMakeFiles/cmTC_356ec.dir/src.c.o»
+make[1]: *** [CMakeFiles/cmTC_356ec.dir/src.c.o] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_356ec/fast»
+make: *** [cmTC_356ec/fast] Ошибка 2
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d0553/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d0553.dir/build.make CMakeFiles/cmTC_d0553.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_d0553.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=strlcpy   -o CMakeFiles/cmTC_d0553.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d0553
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0553.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=strlcpy    -rdynamic CMakeFiles/cmTC_d0553.dir/CheckFunctionExists.c.o  -o cmTC_d0553 
+CMakeFiles/cmTC_d0553.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `strlcpy'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d0553.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_d0553»
+make[1]: *** [cmTC_d0553] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_d0553/fast»
+make: *** [cmTC_d0553/fast] Ошибка 2
+
+
+Determining if the function strlcat exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_56995/fast"
+/usr/bin/make -f CMakeFiles/cmTC_56995.dir/build.make CMakeFiles/cmTC_56995.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_56995.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=strlcat   -o CMakeFiles/cmTC_56995.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_56995
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56995.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=strlcat    -rdynamic CMakeFiles/cmTC_56995.dir/CheckFunctionExists.c.o  -o cmTC_56995 
+CMakeFiles/cmTC_56995.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `strlcat'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_56995.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_56995»
+make[1]: *** [cmTC_56995] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_56995/fast»
+make: *** [cmTC_56995/fast] Ошибка 2
+
+
+Determining if the function _strrev exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bedf5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bedf5.dir/build.make CMakeFiles/cmTC_bedf5.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_bedf5.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_strrev   -o CMakeFiles/cmTC_bedf5.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bedf5
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bedf5.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_strrev    -rdynamic CMakeFiles/cmTC_bedf5.dir/CheckFunctionExists.c.o  -o cmTC_bedf5 
+CMakeFiles/cmTC_bedf5.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_strrev'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_bedf5.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_bedf5»
+make[1]: *** [cmTC_bedf5] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_bedf5/fast»
+make: *** [cmTC_bedf5/fast] Ошибка 2
+
+
+Determining if the function _strupr exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eaa46/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eaa46.dir/build.make CMakeFiles/cmTC_eaa46.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_eaa46.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_strupr   -o CMakeFiles/cmTC_eaa46.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_eaa46
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eaa46.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_strupr    -rdynamic CMakeFiles/cmTC_eaa46.dir/CheckFunctionExists.c.o  -o cmTC_eaa46 
+CMakeFiles/cmTC_eaa46.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_strupr'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_eaa46.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_eaa46»
+make[1]: *** [cmTC_eaa46] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_eaa46/fast»
+make: *** [cmTC_eaa46/fast] Ошибка 2
+
+
+Determining if the function _strlwr exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b8c56/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b8c56.dir/build.make CMakeFiles/cmTC_b8c56.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_b8c56.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_strlwr   -o CMakeFiles/cmTC_b8c56.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b8c56
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8c56.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_strlwr    -rdynamic CMakeFiles/cmTC_b8c56.dir/CheckFunctionExists.c.o  -o cmTC_b8c56 
+CMakeFiles/cmTC_b8c56.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_strlwr'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_b8c56.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_b8c56»
+make[1]: *** [cmTC_b8c56] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_b8c56/fast»
+make: *** [cmTC_b8c56/fast] Ошибка 2
+
+
+Determining if the function itoa exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8a41c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8a41c.dir/build.make CMakeFiles/cmTC_8a41c.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_8a41c.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=itoa   -o CMakeFiles/cmTC_8a41c.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8a41c
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a41c.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=itoa    -rdynamic CMakeFiles/cmTC_8a41c.dir/CheckFunctionExists.c.o  -o cmTC_8a41c 
+CMakeFiles/cmTC_8a41c.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `itoa'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8a41c.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_8a41c»
+make[1]: *** [cmTC_8a41c] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_8a41c/fast»
+make: *** [cmTC_8a41c/fast] Ошибка 2
+
+
+Determining if the function _ltoa exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_20478/fast"
+/usr/bin/make -f CMakeFiles/cmTC_20478.dir/build.make CMakeFiles/cmTC_20478.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_20478.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_ltoa   -o CMakeFiles/cmTC_20478.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_20478
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20478.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_ltoa    -rdynamic CMakeFiles/cmTC_20478.dir/CheckFunctionExists.c.o  -o cmTC_20478 
+CMakeFiles/cmTC_20478.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_ltoa'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_20478.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_20478»
+make[1]: *** [cmTC_20478] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_20478/fast»
+make: *** [cmTC_20478/fast] Ошибка 2
+
+
+Determining if the function _uitoa exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8ae57/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8ae57.dir/build.make CMakeFiles/cmTC_8ae57.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_8ae57.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_uitoa   -o CMakeFiles/cmTC_8ae57.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8ae57
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ae57.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_uitoa    -rdynamic CMakeFiles/cmTC_8ae57.dir/CheckFunctionExists.c.o  -o cmTC_8ae57 
+CMakeFiles/cmTC_8ae57.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_uitoa'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8ae57.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_8ae57»
+make[1]: *** [cmTC_8ae57] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_8ae57/fast»
+make: *** [cmTC_8ae57/fast] Ошибка 2
+
+
+Determining if the function _ultoa exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a2694/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a2694.dir/build.make CMakeFiles/cmTC_a2694.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_a2694.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_ultoa   -o CMakeFiles/cmTC_a2694.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a2694
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2694.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_ultoa    -rdynamic CMakeFiles/cmTC_a2694.dir/CheckFunctionExists.c.o  -o cmTC_a2694 
+CMakeFiles/cmTC_a2694.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_ultoa'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a2694.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_a2694»
+make[1]: *** [cmTC_a2694] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_a2694/fast»
+make: *** [cmTC_a2694/fast] Ошибка 2
+
+
+Determining if the function _i64toa exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a6039/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a6039.dir/build.make CMakeFiles/cmTC_a6039.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_a6039.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_i64toa   -o CMakeFiles/cmTC_a6039.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a6039
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6039.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_i64toa    -rdynamic CMakeFiles/cmTC_a6039.dir/CheckFunctionExists.c.o  -o cmTC_a6039 
+CMakeFiles/cmTC_a6039.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_i64toa'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a6039.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_a6039»
+make[1]: *** [cmTC_a6039] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_a6039/fast»
+make: *** [cmTC_a6039/fast] Ошибка 2
+
+
+Determining if the function _ui64toa exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4af28/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4af28.dir/build.make CMakeFiles/cmTC_4af28.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_4af28.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_ui64toa   -o CMakeFiles/cmTC_4af28.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4af28
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4af28.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_ui64toa    -rdynamic CMakeFiles/cmTC_4af28.dir/CheckFunctionExists.c.o  -o cmTC_4af28 
+CMakeFiles/cmTC_4af28.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_ui64toa'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_4af28.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_4af28»
+make[1]: *** [cmTC_4af28] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_4af28/fast»
+make: *** [cmTC_4af28/fast] Ошибка 2
+
+
+Determining if the function _stricmp exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7e2c7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7e2c7.dir/build.make CMakeFiles/cmTC_7e2c7.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_7e2c7.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_stricmp   -o CMakeFiles/cmTC_7e2c7.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7e2c7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e2c7.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_stricmp    -rdynamic CMakeFiles/cmTC_7e2c7.dir/CheckFunctionExists.c.o  -o cmTC_7e2c7 
+CMakeFiles/cmTC_7e2c7.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_stricmp'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_7e2c7.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_7e2c7»
+make[1]: *** [cmTC_7e2c7] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_7e2c7/fast»
+make: *** [cmTC_7e2c7/fast] Ошибка 2
+
+
+Determining if the function _strnicmp exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_07f05/fast"
+/usr/bin/make -f CMakeFiles/cmTC_07f05.dir/build.make CMakeFiles/cmTC_07f05.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_07f05.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_strnicmp   -o CMakeFiles/cmTC_07f05.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_07f05
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07f05.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=_strnicmp    -rdynamic CMakeFiles/cmTC_07f05.dir/CheckFunctionExists.c.o  -o cmTC_07f05 
+CMakeFiles/cmTC_07f05.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_strnicmp'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_07f05.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_07f05»
+make[1]: *** [cmTC_07f05] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_07f05/fast»
+make: *** [cmTC_07f05/fast] Ошибка 2
+
+
+Determining if the function sysctlbyname exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_35743/fast"
+/usr/bin/make -f CMakeFiles/cmTC_35743.dir/build.make CMakeFiles/cmTC_35743.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_35743.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=sysctlbyname   -o CMakeFiles/cmTC_35743.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_35743
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35743.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=sysctlbyname    -rdynamic CMakeFiles/cmTC_35743.dir/CheckFunctionExists.c.o  -o cmTC_35743 
+CMakeFiles/cmTC_35743.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `sysctlbyname'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_35743.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_35743»
+make[1]: *** [cmTC_35743] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_35743/fast»
+make: *** [cmTC_35743/fast] Ошибка 2
+
+
+Determining if the function iconv_open exists in the iconv failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f2843/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f2843.dir/build.make CMakeFiles/cmTC_f2843.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_f2843.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=iconv_open   -o CMakeFiles/cmTC_f2843.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f2843
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2843.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=iconv_open    -rdynamic CMakeFiles/cmTC_f2843.dir/CheckFunctionExists.c.o  -o cmTC_f2843 -liconv 
+/usr/bin/ld: cannot find -liconv
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f2843.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_f2843»
+make[1]: *** [cmTC_f2843] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_f2843/fast»
+make: *** [cmTC_f2843/fast] Ошибка 2
+
+
+Determining if the function alloca exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ccbdb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ccbdb.dir/build.make CMakeFiles/cmTC_ccbdb.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_ccbdb.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=alloca   -o CMakeFiles/cmTC_ccbdb.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘alloca’
+/usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^
+Linking C executable cmTC_ccbdb
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccbdb.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=alloca    -rdynamic CMakeFiles/cmTC_ccbdb.dir/CheckFunctionExists.c.o  -o cmTC_ccbdb 
+CMakeFiles/cmTC_ccbdb.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x1f): undefined reference to `alloca'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ccbdb.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_ccbdb»
+make[1]: *** [cmTC_ccbdb] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_ccbdb/fast»
+make: *** [cmTC_ccbdb/fast] Ошибка 2
+
+
+Determining if the function dlopen exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0f668/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0f668.dir/build.make CMakeFiles/cmTC_0f668.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_0f668.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=dlopen   -o CMakeFiles/cmTC_0f668.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0f668
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f668.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=dlopen    -rdynamic CMakeFiles/cmTC_0f668.dir/CheckFunctionExists.c.o  -o cmTC_0f668 
+CMakeFiles/cmTC_0f668.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `dlopen'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0f668.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_0f668»
+make[1]: *** [cmTC_0f668] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_0f668/fast»
+make: *** [cmTC_0f668/fast] Ошибка 2
+
+
+Performing C SOURCE FILE Test HAVE_VIDEO_RPI failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ae3ca/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ae3ca.dir/build.make CMakeFiles/cmTC_ae3ca.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_ae3ca.dir/src.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DHAVE_VIDEO_RPI  -I/opt/vc/include/interface/vmcs_host/linux/ -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include  -L/opt/vc/lib   -o CMakeFiles/cmTC_ae3ca.dir/src.c.o   -c /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/src.c
+/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/src.c:2:30: fatal error: bcm_host.h: Нет такого файла или каталога
+compilation terminated.
+CMakeFiles/cmTC_ae3ca.dir/build.make:65: ошибка выполнения рецепта для цели «CMakeFiles/cmTC_ae3ca.dir/src.c.o»
+make[1]: *** [CMakeFiles/cmTC_ae3ca.dir/src.c.o] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_ae3ca/fast»
+make: *** [cmTC_ae3ca/fast] Ошибка 2
+
+Source file was:
+
+        #include <bcm_host.h>
+        int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_VDK failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c9307/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c9307.dir/build.make CMakeFiles/cmTC_c9307.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_c9307.dir/src.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DHAVE_VIDEO_VIVANTE_VDK   -o CMakeFiles/cmTC_c9307.dir/src.c.o   -c /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/src.c
+/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/src.c:2:28: fatal error: gc_vdk.h: Нет такого файла или каталога
+compilation terminated.
+CMakeFiles/cmTC_c9307.dir/build.make:65: ошибка выполнения рецепта для цели «CMakeFiles/cmTC_c9307.dir/src.c.o»
+make[1]: *** [CMakeFiles/cmTC_c9307.dir/src.c.o] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_c9307/fast»
+make: *** [cmTC_c9307/fast] Ошибка 2
+
+Source file was:
+
+        #include <gc_vdk.h>
+        int main(int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_EGL_FB failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_805b3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_805b3.dir/build.make CMakeFiles/cmTC_805b3.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_805b3.dir/src.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DHAVE_VIDEO_VIVANTE_EGL_FB   -o CMakeFiles/cmTC_805b3.dir/src.c.o   -c /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/src.c
+/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/src.c:4:36: fatal error: EGL/eglvivante.h: Нет такого файла или каталога
+compilation terminated.
+CMakeFiles/cmTC_805b3.dir/build.make:65: ошибка выполнения рецепта для цели «CMakeFiles/cmTC_805b3.dir/src.c.o»
+make[1]: *** [CMakeFiles/cmTC_805b3.dir/src.c.o] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_805b3/fast»
+make: *** [cmTC_805b3/fast] Ошибка 2
+
+Source file was:
+
+        #define LINUX
+        #define EGL_API_FB
+        #include <EGL/eglvivante.h>
+        int main(int argc, char** argv) {}
+Determining if the include file fcitx/frontend.h exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e0658/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e0658.dir/build.make CMakeFiles/cmTC_e0658.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_e0658.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -D_FORCE_INLINES    -o CMakeFiles/cmTC_e0658.dir/CheckIncludeFile.c.o   -c /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:28: fatal error: fcitx/frontend.h: Нет такого файла или каталога
+compilation terminated.
+CMakeFiles/cmTC_e0658.dir/build.make:65: ошибка выполнения рецепта для цели «CMakeFiles/cmTC_e0658.dir/CheckIncludeFile.c.o»
+make[1]: *** [CMakeFiles/cmTC_e0658.dir/CheckIncludeFile.c.o] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_e0658/fast»
+make: *** [cmTC_e0658/fast] Ошибка 2
+
+
+Performing C SOURCE FILE Test HAVE_INPUT_TSLIB failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_decae/fast"
+/usr/bin/make -f CMakeFiles/cmTC_decae.dir/build.make CMakeFiles/cmTC_decae.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_decae.dir/src.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DHAVE_INPUT_TSLIB   -o CMakeFiles/cmTC_decae.dir/src.c.o   -c /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/src.c
+/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/src.c:2:27: fatal error: tslib.h: Нет такого файла или каталога
+compilation terminated.
+CMakeFiles/cmTC_decae.dir/build.make:65: ошибка выполнения рецепта для цели «CMakeFiles/cmTC_decae.dir/src.c.o»
+make[1]: *** [CMakeFiles/cmTC_decae.dir/src.c.o] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_decae/fast»
+make: *** [cmTC_decae/fast] Ошибка 2
+
+Source file was:
+
+        #include "tslib.h"
+        int main(int argc, char** argv) { }
+Determining if the function hid_init exists in the usbhid failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3c9df/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3c9df.dir/build.make CMakeFiles/cmTC_3c9df.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_3c9df.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=hid_init   -o CMakeFiles/cmTC_3c9df.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3c9df
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c9df.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=hid_init    -rdynamic CMakeFiles/cmTC_3c9df.dir/CheckFunctionExists.c.o  -o cmTC_3c9df -lusbhid 
+/usr/bin/ld: cannot find -lusbhid
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3c9df.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_3c9df»
+make[1]: *** [cmTC_3c9df] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_3c9df/fast»
+make: *** [cmTC_3c9df/fast] Ошибка 2
+
+
+Determining if the include file usb.h exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ab248/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ab248.dir/build.make CMakeFiles/cmTC_ab248.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_ab248.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -D_FORCE_INLINES    -o CMakeFiles/cmTC_ab248.dir/CheckIncludeFile.c.o   -c /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:17: fatal error: usb.h: Нет такого файла или каталога
+compilation terminated.
+CMakeFiles/cmTC_ab248.dir/build.make:65: ошибка выполнения рецепта для цели «CMakeFiles/cmTC_ab248.dir/CheckIncludeFile.c.o»
+make[1]: *** [CMakeFiles/cmTC_ab248.dir/CheckIncludeFile.c.o] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_ab248/fast»
+make: *** [cmTC_ab248/fast] Ошибка 2
+
+
+Determining if the include file libusb.h exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_77565/fast"
+/usr/bin/make -f CMakeFiles/cmTC_77565.dir/build.make CMakeFiles/cmTC_77565.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_77565.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -D_FORCE_INLINES    -o CMakeFiles/cmTC_77565.dir/CheckIncludeFile.c.o   -c /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:20: fatal error: libusb.h: Нет такого файла или каталога
+compilation terminated.
+CMakeFiles/cmTC_77565.dir/build.make:65: ошибка выполнения рецепта для цели «CMakeFiles/cmTC_77565.dir/CheckIncludeFile.c.o»
+make[1]: *** [CMakeFiles/cmTC_77565.dir/CheckIncludeFile.c.o] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_77565/fast»
+make: *** [cmTC_77565/fast] Ошибка 2
+
+
+Determining if the function hid_init exists in the usb failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d3205/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d3205.dir/build.make CMakeFiles/cmTC_d3205.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_d3205.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=hid_init   -o CMakeFiles/cmTC_d3205.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d3205
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3205.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=hid_init    -rdynamic CMakeFiles/cmTC_d3205.dir/CheckFunctionExists.c.o  -o cmTC_d3205 -lusb 
+/usr/bin/ld: cannot find -lusb
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d3205.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_d3205»
+make[1]: *** [cmTC_d3205] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_d3205/fast»
+make: *** [cmTC_d3205/fast] Ошибка 2
+
+
+Performing C SOURCE FILE Test HAVE_USBHID failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8b603/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8b603.dir/build.make CMakeFiles/cmTC_8b603.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_8b603.dir/src.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DHAVE_USBHID   -o CMakeFiles/cmTC_8b603.dir/src.c.o   -c /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/src.c
+/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/src.c:10:34: fatal error: dev/usb/usb.h: Нет такого файла или каталога
+compilation terminated.
+CMakeFiles/cmTC_8b603.dir/build.make:65: ошибка выполнения рецепта для цели «CMakeFiles/cmTC_8b603.dir/src.c.o»
+make[1]: *** [CMakeFiles/cmTC_8b603.dir/src.c.o] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_8b603/fast»
+make: *** [cmTC_8b603/fast] Ошибка 2
+
+Source file was:
+
+       #include <sys/types.h>
+        #if defined(HAVE_USB_H)
+        #include <usb.h>
+        #endif
+        #ifdef __DragonFly__
+        # include <bus/usb/usb.h>
+        # include <bus/usb/usbhid.h>
+        #else
+        # include <dev/usb/usb.h>
+        # include <dev/usb/usbhid.h>
+        #endif
+        #if defined(HAVE_USBHID_H)
+        #include <usbhid.h>
+        #elif defined(HAVE_LIBUSB_H)
+        #include <libusb.h>
+        #elif defined(HAVE_LIBUSBHID_H)
+        #include <libusbhid.h>
+        #endif
+        int main(int argc, char **argv) {
+          struct report_desc *repdesc;
+          struct usb_ctl_report *repbuf;
+          hid_kind_t hidkind;
+          return 0;
+        }
+Performing C SOURCE FILE Test HAVE_PTHREAD_NP_H failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fd71c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fd71c.dir/build.make CMakeFiles/cmTC_fd71c.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_fd71c.dir/src.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DHAVE_PTHREAD_NP_H   -D_REENTRANT -pthread   -o CMakeFiles/cmTC_fd71c.dir/src.c.o   -c /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/src.c
+/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp/src.c:3:34: fatal error: pthread_np.h: Нет такого файла или каталога
+compilation terminated.
+CMakeFiles/cmTC_fd71c.dir/build.make:65: ошибка выполнения рецепта для цели «CMakeFiles/cmTC_fd71c.dir/src.c.o»
+make[1]: *** [CMakeFiles/cmTC_fd71c.dir/src.c.o] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_fd71c/fast»
+make: *** [cmTC_fd71c/fast] Ошибка 2
+
+Source file was:
+
+          #include <pthread.h>
+          #include <pthread_np.h>
+          int main(int argc, char** argv) { return 0; }
+Determining if the function pthread_set_name_np exists failed with the following output:
+Change Dir: /home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_04b77/fast"
+/usr/bin/make -f CMakeFiles/cmTC_04b77.dir/build.make CMakeFiles/cmTC_04b77.dir/build
+make[1]: вход в каталог «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_04b77.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=pthread_set_name_np   -D_REENTRANT -pthread   -o CMakeFiles/cmTC_04b77.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_04b77
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04b77.dir/link.txt --verbose=1
+/usr/bin/gcc  -D_FORCE_INLINES -DCHECK_FUNCTION_EXISTS=pthread_set_name_np   -D_REENTRANT -pthread    -rdynamic CMakeFiles/cmTC_04b77.dir/CheckFunctionExists.c.o  -o cmTC_04b77 
+CMakeFiles/cmTC_04b77.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `pthread_set_name_np'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_04b77.dir/build.make:86: ошибка выполнения рецепта для цели «cmTC_04b77»
+make[1]: *** [cmTC_04b77] Ошибка 1
+make[1]: выход из каталога «/home/user/code/c/basic_window/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_04b77/fast»
+make: *** [cmTC_04b77/fast] Ошибка 2
+
+

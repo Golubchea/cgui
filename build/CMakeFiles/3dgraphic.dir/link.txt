@@ -1,0 +1,1 @@
+/usr/bin/gcc  -D_FORCE_INLINES -g  -rdynamic CMakeFiles/3dgraphic.dir/src/main.c.o CMakeFiles/3dgraphic.dir/libs/glad/glad.c.o  -o 3dgraphic libs/SDL2/libSDL2.a -lm -ldl -ldbus-1 -Wl,--no-undefined -pthread 
